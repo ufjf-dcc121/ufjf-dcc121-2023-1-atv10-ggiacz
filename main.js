@@ -13,7 +13,6 @@ function envia(evento) {
     form.valor.value = "";
     form.valor.focus();
     atualiza();
-    
 }
 
 function atualiza() {
