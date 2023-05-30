@@ -1,7 +1,8 @@
-import { adicionar, get_itens } from "./store.js";
+import { adicionar, get_itens, remover } from "./store.js";
 
 const form = document.forms.entrada;
 form.addEventListener('submit', envia)
+form.remover.addEventListener('click', remove)
 
 atualiza();
 
@@ -12,6 +13,12 @@ function envia(evento) {
     adicionar(n);
     form.valor.value = "";
     form.valor.focus();
+    atualiza();
+}
+
+function remove() {
+    console.log('Valor removido!')
+    remover();
     atualiza();
 }
 
