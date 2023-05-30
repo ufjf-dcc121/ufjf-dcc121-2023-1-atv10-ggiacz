@@ -7,3 +7,7 @@ export function adicionar(valor){
 export function get_itens(){
     return [...store.estado];
 }
+
+export function remover(){
+    store.estado.pop();
+}
