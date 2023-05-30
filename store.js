@@ -1,8 +1,9 @@
-const store = { estado: 0 };
-export default store;
+const store = { estado: [null] };
 
+export function adicionar(valor){
+    store.estado.push(valor);
+}
 
-export const store2 = { estado: 0 };
-export const store3 = { estado: 0 };
-
-
+export function get_itens(){
+    return [...store.estado];
+}
